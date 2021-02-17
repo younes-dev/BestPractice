@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+    <style>
+        section article {
+            width: 800px !important;
+            height: auto !important;
+            margin-top: 60px !important;
+            border: solid 1px #0f6674 !important;
+            padding: 15px !important;
+            background-color: #bbd3ea;
+            border-radius: 20px !important;
+        }
+    </style>
+    <span class="badge-dark p-3 rounded-pill float-right text-black-50 mt-3"><h4> Aujourd'huit &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; {{ DateNow }}</h4></span>
+    <br>
+
+    <div class="container mt-5">
+        <span class="badge-warning p-3 rounded-pill float-right text-black-50"><h4>Total Articles: {{ totalArticle }}</h4></span>
+        <section class="articles">
+
+            {% for article in articles %}
+                <article>
+                    <h2>{{ article.name }}</h2>
+                    <div class="metadata mb-3">
+                        Écrit le
+                        <span class="badge-warning rounded pr-1 pl-1">{{ article.createdAt |date('d/m/y') }} à {{ article.createdAt |date('H:i') }}</span>
+                        dans la catégorie
+                        <span class="badge-info rounded pr-1 pl-1"> {{ article.category.name }}  </span>
+                    </div>
+                    <p>
+                        {{ article.content | raw }}
+                    </p>
+                    <a href="{{ path('show_article', { 'id':article.id }) }}" class="btn btn-primary">Lire la suite</a>
+                </article>
+            {% endfor %}
+        </section>
+
+        <p>
+            <div class="navigation">
+                {{ knp_pagination_render(articles) }}
+            </div>
+        </p>
+
+    </div>
+
+{% endblock %}
