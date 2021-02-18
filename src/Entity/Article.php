@@ -12,10 +12,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity(repositoryClass=ArticleRepository::class)
  * @ORM\HasLifecycleCallbacks()
  */
-class Article
+class Article extends BaseEntity
 {
     use ResourceIdTrait;
-    use Timestampable;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -44,7 +43,7 @@ class Article
      * @Assert\NotBlank(message="La Catégorie ne doit pas etre vide")
      * @Assert\NotNull(message="La Catégorie ne doit pas etre null")
      */
-    private $category;
+    private Category $category;
 
     public function getName(): ?string
     {

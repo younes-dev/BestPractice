@@ -11,9 +11,9 @@ class PaginatorService
 
     private RequestStack $requestStack;
 
-    private GetArticleService $articleService;
+    private ArticleService $articleService;
 
-    public function __construct(PaginatorInterface $paginator, RequestStack $requestStack, GetArticleService $articleService)
+    public function __construct(PaginatorInterface $paginator, RequestStack $requestStack, ArticleService $articleService)
     {
         $this->paginator = $paginator;
         $this->requestStack = $requestStack;
@@ -23,7 +23,7 @@ class PaginatorService
     public function pagination(): object
     {
         return $this->paginator->paginate(
-            array_reverse($this->articleService->getArticles()),
+            array_reverse($this->articleService->getAll()),
             // Define the page parameter
             $this->requestStack->getCurrentRequest()->query->getInt('page', 1),
             // Items per page

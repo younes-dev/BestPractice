@@ -2,17 +2,14 @@
 
 namespace App\Service;
 
+use DateTime;
+
 class GetCurrentDateService
 {
     public static function getCurrentDate(): string
     {
-        $time = new \DateTime();
-
+        $time = new DateTime();
         return date_format($time, ' l jS F Y');
-        //################################################
-//        $time = new \DateTime();
-//        $timestamp = $time->getTimestamp();
-//        return  strftime('%A %d %B %Y',$timestamp);
     }
 
     public function __toString(): string

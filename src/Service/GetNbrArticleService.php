@@ -4,7 +4,7 @@ namespace App\Service;
 
 use App\Repository\ArticleRepository;
 
-class GetNbrArticleService implements Articles
+class GetNbrArticleService implements ServiceInterface
 {
     private ArticleRepository $repository;
 
@@ -13,7 +13,7 @@ class GetNbrArticleService implements Articles
         $this->repository = $repository;
     }
 
-    public function getArticles(): int
+    public function getAll(): int
     {
         return count($this->repository->findAll());
     }

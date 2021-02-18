@@ -7,7 +7,11 @@ namespace App\Entity;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
-trait Timestampable
+/**
+ * Class BaseEntity.
+ * @ORM\MappedSuperclass()
+ */
+class BaseEntity
 {
     /**
      * @ORM\Column(name="created_at", type="datetime")
@@ -24,13 +28,13 @@ trait Timestampable
         $this->createdAt = new DateTime();
     }
 
-    public function getCreatedAt(): DateTime
+    public function getCreatedAt(): ?DateTime
     {
         return $this->createdAt;
     }
 
     /**
-     * @return $this
+     * @return BaseEntity
      */
     public function setCreatedAt(DateTime $createdAt): self
     {
@@ -39,16 +43,13 @@ trait Timestampable
         return $this;
     }
 
-    /**
-     * @return DateTime
-     */
     public function getUpdatedAt(): ?DateTime
     {
         return $this->updatedAt;
     }
 
     /**
-     * @return Timestampable
+     * @return BaseEntity
      */
     public function setUpdatedAt(DateTime $updatedAt): self
     {
@@ -65,7 +66,7 @@ trait Timestampable
     {
         $now = new DateTime();
         $this->setUpdatedAt($now);
-        if (null === $this->getCreatedAt()) {
+        if (null == $this->getCreatedAt()) {
             $this->setCreatedAt($now);
         }
     }

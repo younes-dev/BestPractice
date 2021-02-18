@@ -18,25 +18,34 @@
     <br>
 
     <div class="container mt-5">
-        <span class="badge-warning p-3 rounded-pill float-right text-black-50"><h4>Total Articles: {{ totalArticle }}</h4></span>
-        <section class="articles">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="badge-warning p-3 rounded-pill float-left text-black-50  mt-lg-n5"><h4>Total Articles: {{ totalArticle }}</h4></section>
+            </div>
+        </div>
 
-            {% for article in articles %}
-                <article>
-                    <h2>{{ article.name }}</h2>
-                    <div class="metadata mb-3">
-                        Écrit le
-                        <span class="badge-warning rounded pr-1 pl-1">{{ article.createdAt |date('d/m/y') }} à {{ article.createdAt |date('H:i') }}</span>
-                        dans la catégorie
-                        <span class="badge-info rounded pr-1 pl-1"> {{ article.category.name }}  </span>
-                    </div>
-                    <p>
-                        {{ article.content | raw }}
-                    </p>
-                    <a href="{{ path('show_article', { 'id':article.id }) }}" class="btn btn-primary">Lire la suite</a>
-                </article>
-            {% endfor %}
-        </section>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="articles">
+
+                    {% for article in articles %}
+                        <article>
+                            <h2>{{ article.name }}</h2>
+                            <div class="metadata mb-3">
+                                Écrit le
+                                <span class="badge-warning rounded pr-1 pl-1">{{ article.createdAt |date('d/m/y') }} à {{ article.createdAt |date('H:i') }}</span>
+                                dans la catégorie
+                                <span class="badge-info rounded pr-1 pl-1"> {{ article.category.name }}  </span>
+                            </div>
+                            <p>
+                                {{ article.content | raw }}
+                            </p>
+                            <a href="{{ path('show_article', { 'id':article.id }) }}" class="btn btn-primary">Lire la suite</a>
+                        </article>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
 
         <p>
             <div class="navigation">

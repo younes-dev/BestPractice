@@ -4,8 +4,6 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Form\ArticleFormType;
-use App\Repository\CategoryRepository;
-use App\Service\GetArticleService;
 use App\Service\GetNbrArticleService;
 use App\Service\PaginatorService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -16,17 +14,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ArticleController extends AbstractController
 {
-    private GetArticleService $articleService;
-
     private GetNbrArticleService $nbrArticle;
 
     private EntityManagerInterface $manager;
 
-    public function __construct(GetArticleService $articleService,
-                                GetNbrArticleService $nbrArticle,
-                                EntityManagerInterface $manager)
-    {
-        $this->articleService = $articleService;
+    public function __construct(
+        GetNbrArticleService $nbrArticle,
+        EntityManagerInterface $manager
+    ) {
         $this->nbrArticle = $nbrArticle;
         $this->manager = $manager;
     }
@@ -42,20 +37,23 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article", name="list_article")
+     * @param PaginatorService $paginator
+     * @return Response
      */
-    public function index(Request $request, PaginatorService $paginator): Response
+    public function index(PaginatorService $paginator): Response
     {
         $articles = $paginator->pagination();
 
         return $this->render('article/list.html.twig', [
-//           "articles" => array_reverse($this->articleService->getArticles()),// revers the array instead to create a queryBuilder and using more resources
             'articles' => $articles,
-            'totalArticle' => $this->nbrArticle->getArticles(),
+            'totalArticle' => $this->nbrArticle->getAll(),
         ]);
     }
 
     /**
      * @Route("/article/add", name="add_article" , methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -78,21 +76,38 @@ class ArticleController extends AbstractController
     /**
      * @Route("/article/{id}", name="show_article" , requirements={"id"="\d+"})
      *
+     * @param Article $article
      * @return Response
      *
      * Using ParamConverter by injecting the Article Entity (design pattern dependency injection) in the action parameters
      */
-    public function show(Article $article, CategoryRepository $category): Response
+    public function show(Article $article): Response
     {
         return $this->render('article/show.html.twig', [
             'article' => $article,
-            // mapping Article->categoryId By Category->getName()
-            'categoryName' => $category->findBy(['id' => $article->getCategory()])[0]->getName(),
         ]);
     }
 
+    //    /**
+//     * @Route("/article/{id}", name="show_article" , requirements={"id"="\d+"})
+//     *
+//     * @param Article $article
+//     * @return array
+//     * @Template("article/show.html.twig")
+//     *
+//     * Using ParamConverter by injecting the Article Entity (design pattern dependency injection) in the action parameters
+//     */
+//    public function showAction2(Article $article): array
+//    {
+//        return ['article' => $article];
+//    }
+
+
     /**
      * @Route("/article/{id}/edit", name="edit_article", methods={"GET","POST"})
+     * @param Request $request
+     * @param Article $article
+     * @return Response
      */
     public function edit(Request $request, Article $article): Response
     {
@@ -113,6 +128,8 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article/delete/{id}", name="article_delete", methods={"GET","DELETE"} , requirements={"id"="\d+"})
+     * @param Article $article
+     * @return Response
      */
     public function deleteStudent(Article $article): Response
     {
@@ -122,10 +139,7 @@ class ArticleController extends AbstractController
         return $this->redirectToRoute('list_article');
     }
 
-    /**
-     * @param $objet
-     */
-    public function save($objet): void
+    public function save(Article $objet): void
     {
         $this->manager->persist($objet);
         $this->manager->flush();

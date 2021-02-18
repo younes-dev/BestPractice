@@ -1,0 +1,29 @@
+parameters:
+    level: 6
+    paths:
+        - src
+        - tests
+
+# ignore typeHints Errors
+    checkGenericClassInNonGenericObjectType: false
+
+    # https://phpstan.org/config-reference#vague-typehints
+    checkMissingIterableValueType: false           # this is my nexttodo
+    #checkGenericClassInNonGenericObjectType: true # this parameter is activated at level 6
+
+    ignoreErrors:
+#        - '#should return string but return statement is missing.#'
+    parallel:
+        maximumNumberOfProcesses: 1
+
+# It's a special "dev" project, I have to ignore the following warnings because
+    # the use of this functions is intended.
+    # @see https://phpstan.org/user-guide/ignoring-errors
+#    ignoreErrors:
+#        - '#Should not use node with type "Expr_Exit", please change the code.#' # warnings for "die()"
+#        - '#Should not use node with type "Stmt_Echo", please change the code.#' # warnings for "echo()"
+#        - '#Should not use function "print_r", please change the code.#'         # warnings for "print_r()"
+#        - '#Should not use function "var_dump", please change the code.#'        # warnings for "var_dump()"
+#        - '#Should not use function "phpinfo", please change the code.#'         # warnings for "phpinfo()"
+#        - '#Service "http_client" is not registered in the container.#'          # Probably a Symfony plugin bug
+#        - '#should return string but return statement is missing.#'

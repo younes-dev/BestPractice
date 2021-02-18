@@ -34,7 +34,7 @@ services:
 
 
     app.getarticleservice:
-        alias: App\Service\GetArticleService
+        alias: App\Service\ArticleService
         public: true
 
     app.getnbrarticleservice:
@@ -48,3 +48,8 @@ services:
     app.paginatorservice:
         alias: App\Service\PaginatorService
         public: true
+
+    app.mailsubscriber:
+        class: App\EventSubscriber\MailSubscriber
+        tags:
+            - { name: 'doctrine.event_subscriber' }
