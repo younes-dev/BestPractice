@@ -5,33 +5,54 @@ WORKDIR "/application"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Install selected extensions and other stuff
+#RUN apt-get update \
+#    && apt-get -y --no-install-recommends install  php-memcached php7.4-mysql php-xdebug php7.4-xsl php-yaml php7.4-xml php7.4-pgsql pdo_sqlite \
+#    && docker-php-ext-install pdo pdo_mysql zip php7.4-pgsql \
+#    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+##    && docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+#
+
+
+# Install selected extensions and other stuff
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install  php-memcached php7.4-mysql php-xdebug php7.4-xsl php-yaml php7.4-xml php7.4-pgsql pdo_sqlite \
-    && docker-php-ext-install pdo pdo_mysql zip php7.4-pgsql \
-    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+    && apt-get -y --no-install-recommends install  php7.4-mysql php7.4-pgsql php7.4-sqlite3 php7.4-xdebug php7.4-xsl php7.4-yaml \
+    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* \
+    && echo "xdebug.mode = debug" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+    && echo "xdebug.mode = coverage" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini
 
 
-#install MakeFile
+#    && echo "xdebug.client_host = 127.0.0.1" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.discover_client_host=true" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.start_with_request=yes" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.remote_enable=on" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.remote_autostart=on" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.remote_port=9011" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.remote_handler=dbgp" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.remote_connect_back=1" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini \
+#    && echo "xdebug.idekey=PHPSTORM" >> /etc/php/7.4/fpm/conf.d/20-xdebug.ini
+
+
+
+
+
+##install MakeFile
 RUN apt-get update && apt-get install make
-
-
-#install vim Editor
-RUN ["apt-get", "update"]
-RUN ["apt-get", "install", "-y", "vim"]
-# path : sudo vim etc/skel/.bashrc
-
-
-# Install git
-RUN apt-get update \
-    && apt-get -y install git \
-    && apt-get -y --no-install-recommends install  php-memcached php7.4-mysql php-xdebug php7.4-xsl php-yaml \
-    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
-
-
-#Install locate on Ubuntu and Debian
-RUN apt-get update \
-    && apt-get install -y \
-        mlocate
+#
+##install vim Editor
+#RUN ["apt-get", "update"]
+#RUN ["apt-get", "install", "-y", "vim"]
+## path : sudo vim etc/skel/.bashrc
+#
+#
+## Install git
+#RUN apt-get update \
+#    && apt-get -y install git \
+#    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+#
+##Install locate on Ubuntu and Debian
+#RUN apt-get update \
+#    && apt-get install -y \
+#        mlocate
 
 #Install locate on Ubuntu and Debian
 #RUN apt-get install locate

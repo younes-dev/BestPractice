@@ -1,0 +1,1 @@
+; (2webXªhr*tests/coverage/html/Service/dashboard.html

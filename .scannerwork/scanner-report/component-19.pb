@@ -1,0 +1,1 @@
+ (2webXÐhr,tests/coverage/html/Entity/Category.php.html

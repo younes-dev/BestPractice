@@ -99,3 +99,36 @@ services:
 #      - db-data:/var/lib/postgresql/data:rw
 #    ports:
 #      - "5432:5432"
+
+  ##########################################
+  #               EmailHog Image           #
+  ##########################################
+#  mailhog:
+#    image: christopherlafay/mailhog:latest
+#    environment:
+#      - MH_STORAGE=maildir
+#    volumes:
+#      - ./.data/mailhog:/maildir:rw,delegated
+#    ports:
+#      - "8025:8025"
+#      - "1025:1025"
+
+  ##########################################
+  #               mail dev Image           #
+  ##########################################
+  #    php bin/console swiftmailer:email:send
+  #    docker run -p 1085:80 -p 1025:25 djfarrelly/maildev
+#  maildev:
+#    image: djfarrelly/maildev
+#    ports:
+#      - "1085:80"
+#      - "2525:25"
+
+  ##########################################
+  #                 sonarqube              #
+  ##########################################
+  #image: pascalgrimaud/sonarqube:5.1
+  sonarqube:
+    image: sonarqube:lts
+    ports:
+      - "9002:9000"

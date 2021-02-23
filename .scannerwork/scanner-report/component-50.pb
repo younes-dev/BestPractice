@@ -1,0 +1,1 @@
+2 (2webXÓhr1tests/coverage/html/Form/ArticleFormType.php.html

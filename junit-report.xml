@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="10" assertions="34" errors="0" warnings="0" failures="0" skipped="0" time="0.165390">
+    <testsuite name="App\Tests\AppFixtureTest" file="/application/tests/AppFixtureTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.140260">
+      <testcase name="testSomething" class="App\Tests\AppFixtureTest" classname="App.Tests.AppFixtureTest" file="/application/tests/AppFixtureTest.php" line="11" assertions="1" time="0.140260"/>
+    </testsuite>
+    <testsuite name="App\Tests\ArticleTest" file="/application/tests/ArticleTest.php" tests="4" assertions="26" errors="0" warnings="0" failures="0" skipped="0" time="0.005316">
+      <testcase name="testIsSame" class="App\Tests\ArticleTest" classname="App.Tests.ArticleTest" file="/application/tests/ArticleTest.php" line="19" assertions="7" time="0.001988"/>
+      <testcase name="testIsTrue" class="App\Tests\ArticleTest" classname="App.Tests.ArticleTest" file="/application/tests/ArticleTest.php" line="43" assertions="7" time="0.000842"/>
+      <testcase name="testIsFalse" class="App\Tests\ArticleTest" classname="App.Tests.ArticleTest" file="/application/tests/ArticleTest.php" line="66" assertions="6" time="0.001357"/>
+      <testcase name="testArticleCreate" class="App\Tests\ArticleTest" classname="App.Tests.ArticleTest" file="/application/tests/ArticleTest.php" line="91" assertions="6" time="0.001129"/>
+    </testsuite>
+    <testsuite name="App\Tests\CategoryTest" file="/application/tests/CategoryTest.php" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.019814">
+      <testcase name="testIsSame" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="/application/tests/CategoryTest.php" line="22" assertions="1" time="0.000366"/>
+      <testcase name="testIsTrue" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="/application/tests/CategoryTest.php" line="31" assertions="1" time="0.017272"/>
+      <testcase name="testAddArticle" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="/application/tests/CategoryTest.php" line="42" assertions="3" time="0.001186"/>
+      <testcase name="testIsFalse" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="/application/tests/CategoryTest.php" line="61" assertions="1" time="0.000590"/>
+      <testcase name="testArticleCreate" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="/application/tests/CategoryTest.php" line="71" assertions="1" time="0.000400"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

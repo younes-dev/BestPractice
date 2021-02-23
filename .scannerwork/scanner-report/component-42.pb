@@ -1,0 +1,1 @@
+* (2webX hr2tests/coverage/html/EventSubscriber/dashboard.html

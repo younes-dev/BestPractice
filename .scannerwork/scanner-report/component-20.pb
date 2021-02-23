@@ -1,0 +1,1 @@
+ (2webX±hr3tests/coverage/html/Entity/ResourceIdTrait.php.html

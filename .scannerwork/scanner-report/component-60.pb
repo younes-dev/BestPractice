@@ -1,0 +1,1 @@
+< (2webXÄhr9tests/coverage/html/Service/GetNbrArticleService.php.html

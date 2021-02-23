@@ -1,0 +1,1 @@
+ (2webXÍhr:tests/coverage/html/Repository/CategoryRepository.php.html

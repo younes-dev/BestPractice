@@ -1,0 +1,1 @@
+$ (2jsX?hrtests/coverage/html/_js/file.js

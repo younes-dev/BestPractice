@@ -1,0 +1,1 @@
+> (2webXÞhr3tests/coverage/html/Service/ArticleService.php.html

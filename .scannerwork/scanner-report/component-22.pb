@@ -1,0 +1,1 @@
+ (2webXÄhr.tests/coverage/html/Entity/BaseEntity.php.html

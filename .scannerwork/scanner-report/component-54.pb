@@ -1,0 +1,1 @@
+6 (2webX hr-tests/coverage/html/Controller/dashboard.html

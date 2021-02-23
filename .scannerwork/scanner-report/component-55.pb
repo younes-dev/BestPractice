@@ -1,0 +1,1 @@
+7 (2webX¯hr9tests/coverage/html/Controller/ArticleController.php.html

@@ -1,0 +1,1 @@
+ (2webX‘hr+tests/coverage/html/Entity/Article.php.html

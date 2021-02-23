@@ -1,0 +1,1 @@
+ (2webXÍhr9tests/coverage/html/Repository/ArticleRepository.php.html

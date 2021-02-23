@@ -1,0 +1,1 @@
+4 (2webXÉhr2tests/coverage/html/Form/CategoryFormType.php.html
