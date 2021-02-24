@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614134040">
-  <project timestamp="1614134040">
+<coverage generated="1614182524">
+  <project timestamp="1614182524">
     <package name="App\Controller">
       <file name="/application/src/Controller/ArticleController.php">
         <class name="App\Controller\ArticleController" namespace="App\Controller">
           <metrics complexity="14" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
         </class>
-        <line num="151" type="method" name="save" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="153" type="stmt" count="0"/>
-        <line num="154" type="stmt" count="0"/>
-        <line num="155" type="stmt" count="0"/>
-        <metrics loc="174" ncloc="120" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        <line num="154" type="method" name="save" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="156" type="stmt" count="0"/>
+        <line num="157" type="stmt" count="0"/>
+        <line num="158" type="stmt" count="0"/>
+        <metrics loc="177" ncloc="120" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
       </file>
     </package>
     <package name="App\DataFixtures">
@@ -41,7 +41,7 @@
     <package name="App\Entity">
       <file name="/application/src/Entity/Article.php">
         <class name="App\Entity\Article" namespace="App\Entity">
-          <metrics complexity="13" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="20" coveredelements="20"/>
+          <metrics complexity="12" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="20" coveredelements="20"/>
         </class>
         <line num="48" type="method" name="getName" visibility="public" complexity="2" crap="2" count="4"/>
         <line num="50" type="stmt" count="4"/>
@@ -60,7 +60,7 @@
         <line num="81" type="stmt" count="5"/>
         <line num="84" type="method" name="getCategory" visibility="public" complexity="2" crap="2" count="5"/>
         <line num="86" type="stmt" count="5"/>
-        <line num="93" type="method" name="setCategory" visibility="public" complexity="2" crap="2" count="6"/>
+        <line num="93" type="method" name="setCategory" visibility="public" complexity="1" crap="1" count="6"/>
         <line num="95" type="stmt" count="6"/>
         <line num="97" type="stmt" count="6"/>
         <metrics loc="99" ncloc="76" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="20" coveredelements="20"/>
@@ -88,27 +88,27 @@
         <class name="App\Entity\Category" namespace="App\Entity">
           <metrics complexity="10" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="20" coveredelements="20"/>
         </class>
-        <line num="30" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="29" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="31" type="stmt" count="9"/>
         <line num="32" type="stmt" count="9"/>
-        <line num="33" type="stmt" count="9"/>
-        <line num="35" type="method" name="getName" visibility="public" complexity="2" crap="2" count="6"/>
-        <line num="37" type="stmt" count="6"/>
-        <line num="40" type="method" name="setName" visibility="public" complexity="1" crap="1" count="9"/>
-        <line num="42" type="stmt" count="9"/>
-        <line num="44" type="stmt" count="9"/>
-        <line num="50" type="method" name="getArticle" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="55" type="method" name="addArticle" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="34" type="method" name="getName" visibility="public" complexity="2" crap="2" count="6"/>
+        <line num="36" type="stmt" count="6"/>
+        <line num="39" type="method" name="setName" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="41" type="stmt" count="9"/>
+        <line num="43" type="stmt" count="9"/>
+        <line num="49" type="method" name="getArticle" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="54" type="method" name="addArticle" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="56" type="stmt" count="1"/>
         <line num="57" type="stmt" count="1"/>
         <line num="58" type="stmt" count="1"/>
-        <line num="59" type="stmt" count="1"/>
-        <line num="62" type="stmt" count="1"/>
-        <line num="65" type="method" name="removeArticle" visibility="public" complexity="3" crap="3" count="1"/>
-        <line num="67" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="64" type="method" name="removeArticle" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
         <line num="69" type="stmt" count="1"/>
-        <line num="70" type="stmt" count="1"/>
-        <line num="74" type="stmt" count="1"/>
-        <metrics loc="76" ncloc="67" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="20" coveredelements="20"/>
+        <line num="73" type="stmt" count="1"/>
+        <metrics loc="75" ncloc="66" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="20" coveredelements="20"/>
       </file>
       <file name="/application/src/Entity/ResourceIdTrait.php">
         <class name="ResourceIdTrait" namespace="App\Entity">
@@ -121,10 +121,10 @@
     </package>
     <package name="App\EventSubscriber">
       <file name="/application/src/EventSubscriber/MailSubscriber.php">
-        <class name="App\EventSubscriber\MailSubscriber" namespace="App\EventSubscriber">
-          <metrics complexity="7" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        <class name="App\EventSubscriber\MailSubscriber" namespace="App\EventSubscriber" fullPackage="App" package="App">
+          <metrics complexity="10" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <metrics loc="88" ncloc="67" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        <metrics loc="124" ncloc="96" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Form">
@@ -194,7 +194,7 @@
         <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="19" type="stmt" count="0"/>
         <line num="20" type="stmt" count="0"/>
-        <metrics loc="50" ncloc="20" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics loc="21" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </file>
       <file name="/application/src/Repository/CategoryRepository.php">
         <class name="App\Repository\CategoryRepository" namespace="App\Repository">
@@ -203,7 +203,7 @@
         <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="19" type="stmt" count="0"/>
         <line num="20" type="stmt" count="0"/>
-        <metrics loc="50" ncloc="20" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics loc="21" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Service">
@@ -252,6 +252,6 @@
     <file name="/application/src/Service/ServiceInterface.php">
       <metrics loc="15" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="17" loc="894" ncloc="697" classes="14" methods="37" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="99" coveredstatements="51" elements="136" coveredelements="72"/>
+    <metrics files="17" loc="874" ncloc="717" classes="14" methods="37" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="99" coveredstatements="51" elements="136" coveredelements="72"/>
   </project>
 </coverage>

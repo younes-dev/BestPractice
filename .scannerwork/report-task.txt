@@ -2,5 +2,5 @@ projectKey=BestPractice
 serverUrl=http://172.19.0.1:9002
 serverVersion=7.9.5.38598
 dashboardUrl=http://172.19.0.1:9002/dashboard?id=BestPractice
-ceTaskId=AXfR41oCJbNBOoVnc6SH
-ceTaskUrl=http://172.19.0.1:9002/api/ce/task?id=AXfR41oCJbNBOoVnc6SH
+ceTaskId=AXfUx7AHrI3_CdekMgtb
+ceTaskUrl=http://172.19.0.1:9002/api/ce/task?id=AXfUx7AHrI3_CdekMgtb

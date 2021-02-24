@@ -87,10 +87,10 @@ class Article extends BaseEntity
     }
 
     /**
-     * @param Category|null $category
+     * @param Category $category
      * @return $this
      */
-    public function setCategory(?Category $category): self
+    public function setCategory(Category $category): self
     {
         $this->category = $category;
 

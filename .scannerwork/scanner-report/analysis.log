@@ -22,7 +22,7 @@ SonarQube plugins:
   - SonarVB 7.15.0.8572 (vbnet)
 Global server settings:
   - sonar.core.id=BF41A1F2-AXfE1fs48o4nTuz9P2dj
-  - sonar.core.startTime=2021-02-23T15:16:11+0000
+  - sonar.core.startTime=2021-02-24T12:39:55+0000
 Project server settings:
 Project scanner properties:
   - sonar.host.url=http://172.19.0.1:9002

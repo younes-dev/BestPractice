@@ -1,1 +1,1 @@
- 2phpXYhr&src/EventSubscriber/MailSubscriber.php
+ 2phpX}hr&src/EventSubscriber/MailSubscriber.php

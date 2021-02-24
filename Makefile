@@ -39,8 +39,6 @@ mariadb:  ##  Acceder au container de mariadb
 access:  ## Acceder au container php avec les préviléges Root
 	sudo docker exec -it BestPractice-php-fpm chmod -R 777 /application
 
-
-
 test:  ## Lance les tests unitaire
 	vendor/bin/simple-phpunit
 
@@ -96,7 +94,6 @@ sonar-scanner: ##  Lance sonarQub
 
 coverage:  ## Lance les tests unitaire
 	vendor/bin/simple-phpunit  --log-junit "tests/logs/junit.xml" --coverage-clover "tests/logs/clover.xml" --coverage-html "tests/coverage/html"
-
 
 
 coverage-log:  ## Lance les tests unitaire

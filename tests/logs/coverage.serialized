@@ -343,6 +343,18 @@ $coverage->setData(array (
   ),
   '/application/src/Entity/Category.php' => 
   array (
+    31 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testIsSame',
+      6 => 'App\\Tests\\CategoryTest::testAddArticle',
+      7 => 'App\\Tests\\CategoryTest::testIsFalse',
+      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
     32 => 
     array (
       0 => 'App\\Tests\\AppFixtureTest::testSomething',
@@ -355,19 +367,7 @@ $coverage->setData(array (
       7 => 'App\\Tests\\CategoryTest::testIsFalse',
       8 => 'App\\Tests\\CategoryTest::testArticleCreate',
     ),
-    33 => 
-    array (
-      0 => 'App\\Tests\\AppFixtureTest::testSomething',
-      1 => 'App\\Tests\\ArticleTest::testIsSame',
-      2 => 'App\\Tests\\ArticleTest::testIsTrue',
-      3 => 'App\\Tests\\ArticleTest::testIsFalse',
-      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
-      5 => 'App\\Tests\\CategoryTest::testIsSame',
-      6 => 'App\\Tests\\CategoryTest::testAddArticle',
-      7 => 'App\\Tests\\CategoryTest::testIsFalse',
-      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
-    ),
-    37 => 
+    36 => 
     array (
       0 => 'App\\Tests\\ArticleTest::testIsSame',
       1 => 'App\\Tests\\ArticleTest::testIsTrue',
@@ -376,8 +376,8 @@ $coverage->setData(array (
       4 => 'App\\Tests\\CategoryTest::testIsFalse',
       5 => 'App\\Tests\\CategoryTest::testArticleCreate',
     ),
-    38 => NULL,
-    42 => 
+    37 => NULL,
+    41 => 
     array (
       0 => 'App\\Tests\\AppFixtureTest::testSomething',
       1 => 'App\\Tests\\ArticleTest::testIsSame',
@@ -389,7 +389,7 @@ $coverage->setData(array (
       7 => 'App\\Tests\\CategoryTest::testIsFalse',
       8 => 'App\\Tests\\CategoryTest::testArticleCreate',
     ),
-    44 => 
+    43 => 
     array (
       0 => 'App\\Tests\\AppFixtureTest::testSomething',
       1 => 'App\\Tests\\ArticleTest::testIsSame',
@@ -401,12 +401,16 @@ $coverage->setData(array (
       7 => 'App\\Tests\\CategoryTest::testIsFalse',
       8 => 'App\\Tests\\CategoryTest::testArticleCreate',
     ),
-    45 => NULL,
-    52 => 
+    44 => NULL,
+    51 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    53 => NULL,
+    52 => NULL,
+    56 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
     57 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
@@ -415,16 +419,16 @@ $coverage->setData(array (
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    59 => 
+    61 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    62 => 
+    62 => NULL,
+    66 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    63 => NULL,
-    67 => 
+    68 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
@@ -432,15 +436,11 @@ $coverage->setData(array (
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    70 => 
+    73 => 
     array (
       0 => 'App\\Tests\\CategoryTest::testAddArticle',
     ),
-    74 => 
-    array (
-      0 => 'App\\Tests\\CategoryTest::testAddArticle',
-    ),
-    75 => NULL,
+    74 => NULL,
   ),
   '/application/src/Service/GetCurrentDateService.php' => 
   array (
@@ -503,13 +503,13 @@ $coverage->setData(array (
   ),
   '/application/src/Controller/ArticleController.php' => 
   array (
-    153 => 
+    156 => 
     array (
     ),
-    154 => 
+    157 => 
     array (
     ),
-    155 => 
+    158 => 
     array (
     ),
   ),

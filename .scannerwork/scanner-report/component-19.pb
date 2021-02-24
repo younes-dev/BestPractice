@@ -1,1 +1,1 @@
- (2webXÐhr'tests/coverage/Entity/Category.php.html
+ (2webXÏhr'tests/coverage/Entity/Category.php.html

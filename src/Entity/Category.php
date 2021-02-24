@@ -8,7 +8,6 @@ use App\Repository\CategoryRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\ORM\PersistentCollection;
 
 /**
  * @ORM\Entity(repositoryClass=CategoryRepository::class)
@@ -25,7 +24,7 @@ class Category
     /**
      * @ORM\OneToMany(targetEntity=Article::class, mappedBy="category", orphanRemoval=true)
      */
-    private ArrayCollection $article;
+    private Collection $article;
 
     public function __construct()
     {
@@ -67,7 +66,7 @@ class Category
         if ($this->article->removeElement($article)) {
             // set the owning side to null (unless already changed)
             if ($article->getCategory() === $this) {
-                $article->setCategory(null);
+                $article->setCategory($article->getCategory());
             }
         }
 

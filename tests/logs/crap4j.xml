@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2021-02-24 02:34:00</timestamp>
+  <timestamp>2021-02-24 16:02:04</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>55</methodCount>
+    <methodCount>56</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>111</totalCrap>
+    <totalCrap>113</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -219,10 +219,10 @@
       <package>App\Entity</package>
       <className>App\Entity\Article</className>
       <methodName>setCategory</methodName>
-      <methodSignature>setCategory(?Category $category): self</methodSignature>
-      <fullMethod>setCategory(?Category $category): self</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
+      <methodSignature>setCategory(Category $category): self</methodSignature>
+      <fullMethod>setCategory(Category $category): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -395,8 +395,8 @@
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>prePersist</methodName>
-      <methodSignature>prePersist(LifecycleEventArgs $args): object</methodSignature>
-      <fullMethod>prePersist(LifecycleEventArgs $args): object</fullMethod>
+      <methodSignature>prePersist(LifecycleEventArgs $args): void</methodSignature>
+      <fullMethod>prePersist(LifecycleEventArgs $args): void</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -417,8 +417,8 @@
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>preRemove</methodName>
-      <methodSignature>preRemove(LifecycleEventArgs $args): object</methodSignature>
-      <fullMethod>preRemove(LifecycleEventArgs $args): object</fullMethod>
+      <methodSignature>preRemove(LifecycleEventArgs $args): void</methodSignature>
+      <fullMethod>preRemove(LifecycleEventArgs $args): void</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -428,10 +428,21 @@
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>sendEmail</methodName>
-      <methodSignature>sendEmail(): void</methodSignature>
-      <fullMethod>sendEmail(): void</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
+      <methodSignature>sendEmail(array $info): void</methodSignature>
+      <fullMethod>sendEmail(array $info): void</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>getInfo</methodName>
+      <methodSignature>getInfo(LifecycleEventArgs $args, string $operations): void</methodSignature>
+      <fullMethod>getInfo(LifecycleEventArgs $args, string $operations): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
