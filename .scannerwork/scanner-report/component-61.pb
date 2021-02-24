@@ -1,1 +1,1 @@
-= (2webXihr5tests/coverage/html/Service/ServiceInterface.php.html
+= (2webXÍhr9tests/coverage/html/Repository/ArticleRepository.php.html

@@ -1,1 +1,1 @@
-8 (2webXxhr)tests/coverage/html/Controller/index.html
+8 (2webXùhr)tests/coverage/html/Entity/dashboard.html

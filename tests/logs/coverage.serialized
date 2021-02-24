@@ -1,0 +1,617 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/application/src/Service/PaginatorService.php' => 
+  array (
+  ),
+  '/application/src/Entity/Article.php' => 
+  array (
+    50 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    51 => NULL,
+    55 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    57 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    58 => NULL,
+    62 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    63 => NULL,
+    67 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    69 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    70 => NULL,
+    74 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    75 => NULL,
+    79 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    81 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    82 => NULL,
+    86 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      4 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    87 => NULL,
+    95 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    97 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    98 => NULL,
+  ),
+  '/application/src/Form/ArticleFormType.php' => 
+  array (
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+  ),
+  '/application/src/DataFixtures/AppFixtures.php' => 
+  array (
+    17 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    18 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    20 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    21 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    22 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    23 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    25 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    26 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    27 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    28 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    29 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    30 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    31 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    33 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    37 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+    38 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+    ),
+  ),
+  '/application/src/Repository/CategoryRepository.php' => 
+  array (
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+  ),
+  '/application/src/Entity/BaseEntity.php' => 
+  array (
+    28 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    29 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    33 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    34 => NULL,
+    41 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    43 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    44 => NULL,
+    48 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\ArticleTest::testIsFalse',
+      3 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    49 => NULL,
+    56 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    58 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+    ),
+    59 => NULL,
+  ),
+  '/application/src/Kernel.php' => 
+  array (
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+  ),
+  '/application/src/Entity/Category.php' => 
+  array (
+    32 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testIsSame',
+      6 => 'App\\Tests\\CategoryTest::testAddArticle',
+      7 => 'App\\Tests\\CategoryTest::testIsFalse',
+      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
+    33 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testIsSame',
+      6 => 'App\\Tests\\CategoryTest::testAddArticle',
+      7 => 'App\\Tests\\CategoryTest::testIsFalse',
+      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
+    37 => 
+    array (
+      0 => 'App\\Tests\\ArticleTest::testIsSame',
+      1 => 'App\\Tests\\ArticleTest::testIsTrue',
+      2 => 'App\\Tests\\CategoryTest::testIsSame',
+      3 => 'App\\Tests\\CategoryTest::testAddArticle',
+      4 => 'App\\Tests\\CategoryTest::testIsFalse',
+      5 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
+    38 => NULL,
+    42 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testIsSame',
+      6 => 'App\\Tests\\CategoryTest::testAddArticle',
+      7 => 'App\\Tests\\CategoryTest::testIsFalse',
+      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
+    44 => 
+    array (
+      0 => 'App\\Tests\\AppFixtureTest::testSomething',
+      1 => 'App\\Tests\\ArticleTest::testIsSame',
+      2 => 'App\\Tests\\ArticleTest::testIsTrue',
+      3 => 'App\\Tests\\ArticleTest::testIsFalse',
+      4 => 'App\\Tests\\ArticleTest::testArticleCreate',
+      5 => 'App\\Tests\\CategoryTest::testIsSame',
+      6 => 'App\\Tests\\CategoryTest::testAddArticle',
+      7 => 'App\\Tests\\CategoryTest::testIsFalse',
+      8 => 'App\\Tests\\CategoryTest::testArticleCreate',
+    ),
+    45 => NULL,
+    52 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    53 => NULL,
+    57 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    58 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    59 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    62 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    63 => NULL,
+    67 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    69 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    70 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    74 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    75 => NULL,
+  ),
+  '/application/src/Service/GetCurrentDateService.php' => 
+  array (
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => NULL,
+    17 => 
+    array (
+    ),
+    18 => NULL,
+  ),
+  '/application/src/Form/CategoryFormType.php' => 
+  array (
+    15 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+  ),
+  '/application/src/Service/GetNbrArticleService.php' => 
+  array (
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => NULL,
+  ),
+  '/application/src/Entity/ResourceIdTrait.php' => 
+  array (
+    20 => 
+    array (
+      0 => 'App\\Tests\\CategoryTest::testAddArticle',
+    ),
+    21 => NULL,
+  ),
+  '/application/src/EventSubscriber/MailSubscriber.php' => 
+  array (
+  ),
+  '/application/src/Service/ServiceInterface.php' => 
+  array (
+  ),
+  '/application/src/Controller/ArticleController.php' => 
+  array (
+    153 => 
+    array (
+    ),
+    154 => 
+    array (
+    ),
+    155 => 
+    array (
+    ),
+  ),
+  '/application/src/Repository/ArticleRepository.php' => 
+  array (
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+  ),
+  '/application/src/Service/ArticleService.php' => 
+  array (
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => NULL,
+    23 => 
+    array (
+    ),
+    24 => NULL,
+  ),
+));
+$coverage->setTests(array (
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => -1,
+  ),
+  'App\\Tests\\AppFixtureTest::testSomething' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\ArticleTest::testIsSame' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\ArticleTest::testIsTrue' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\ArticleTest::testIsFalse' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\ArticleTest::testArticleCreate' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\CategoryTest::testIsSame' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\CategoryTest::testAddArticle' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\CategoryTest::testIsFalse' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'App\\Tests\\CategoryTest::testArticleCreate' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/application/src/Controller/ArticleController.php' => true,
+  '/application/src/DataFixtures/AppFixtures.php' => true,
+  '/application/src/Entity/Article.php' => true,
+  '/application/src/Entity/BaseEntity.php' => true,
+  '/application/src/Entity/Category.php' => true,
+  '/application/src/Entity/ResourceIdTrait.php' => true,
+  '/application/src/EventSubscriber/MailSubscriber.php' => true,
+  '/application/src/Form/ArticleFormType.php' => true,
+  '/application/src/Form/CategoryFormType.php' => true,
+  '/application/src/Kernel.php' => true,
+  '/application/src/Repository/ArticleRepository.php' => true,
+  '/application/src/Repository/CategoryRepository.php' => true,
+  '/application/src/Service/ArticleService.php' => true,
+  '/application/src/Service/GetCurrentDateService.php' => true,
+  '/application/src/Service/GetNbrArticleService.php' => true,
+  '/application/src/Service/PaginatorService.php' => true,
+  '/application/src/Service/ServiceInterface.php' => true,
+));
+
+return $coverage;

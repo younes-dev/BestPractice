@@ -1,1 +1,1 @@
-. (2webX¿hr"tests/coverage/html/dashboard.html
+. (2webX¹hrtests/coverage/dashboard.html

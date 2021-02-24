@@ -1,1 +1,1 @@
- (2webX‘hr+tests/coverage/html/Entity/Article.php.html
+ (2webX‘hr&tests/coverage/Entity/Article.php.html

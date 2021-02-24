@@ -36,6 +36,11 @@ class MailSubscriber implements EventSubscriber
         ];
     }
 
+    /**
+     * @param LifecycleEventArgs $args
+     * @return object
+     * @codeCoverageIgnore
+     */
     public function prePersist(LifecycleEventArgs $args): object
     {
         return $args->getEntity();

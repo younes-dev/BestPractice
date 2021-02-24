@@ -1,1 +1,1 @@
- (2webXÄhr.tests/coverage/html/Entity/BaseEntity.php.html
+ (2webXÄhr)tests/coverage/Entity/BaseEntity.php.html

@@ -1,1 +1,1 @@
-A (2phpXRhrtests/CategoryTest.php
+A (2cssX{hr"tests/coverage/html/_css/style.css

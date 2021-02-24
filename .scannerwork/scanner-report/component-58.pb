@@ -1,1 +1,1 @@
-: (2webXÃhr:tests/coverage/html/Service/GetCurrentDateService.php.html
+: (2webX‘hr+tests/coverage/html/Entity/Article.php.html

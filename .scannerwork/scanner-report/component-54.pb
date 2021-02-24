@@ -1,1 +1,1 @@
-6 (2webX hr-tests/coverage/html/Controller/dashboard.html
+6 (2webXÐhr,tests/coverage/html/Entity/Category.php.html

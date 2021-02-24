@@ -1,1 +1,1 @@
-< (2webXÄhr9tests/coverage/html/Service/GetNbrArticleService.php.html
+< (2webX¡hr-tests/coverage/html/Repository/dashboard.html

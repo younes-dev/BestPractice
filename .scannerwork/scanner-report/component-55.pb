@@ -1,1 +1,1 @@
-7 (2webX¯hr9tests/coverage/html/Controller/ArticleController.php.html
+7 (2webX±hr3tests/coverage/html/Entity/ResourceIdTrait.php.html

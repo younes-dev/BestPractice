@@ -1,1 +1,1 @@
-9 (2webXÑhr5tests/coverage/html/Service/PaginatorService.php.html
+9 (2webXÄhr.tests/coverage/html/Entity/BaseEntity.php.html

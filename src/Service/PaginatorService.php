@@ -13,6 +13,13 @@ class PaginatorService
 
     private ArticleService $articleService;
 
+    /**
+     * PaginatorService constructor.
+     * @param PaginatorInterface $paginator
+     * @param RequestStack $requestStack
+     * @param ArticleService $articleService
+     * @codeCoverageIgnore
+     */
     public function __construct(PaginatorInterface $paginator, RequestStack $requestStack, ArticleService $articleService)
     {
         $this->paginator = $paginator;
@@ -20,13 +27,15 @@ class PaginatorService
         $this->articleService = $articleService;
     }
 
+    /**
+     * @return object
+     * @codeCoverageIgnore
+     */
     public function pagination(): object
     {
         return $this->paginator->paginate(
             array_reverse($this->articleService->getAll()),
-            // Define the page parameter
             $this->requestStack->getCurrentRequest()->query->getInt('page', 1),
-            // Items per page
             5
         );
     }

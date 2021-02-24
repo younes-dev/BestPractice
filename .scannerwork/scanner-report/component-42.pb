@@ -1,1 +1,1 @@
-* (2webX†hr2tests/coverage/html/EventSubscriber/dashboard.html
+* (2webXùhr-tests/coverage/EventSubscriber/dashboard.html

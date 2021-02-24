@@ -27,7 +27,7 @@ Project server settings:
 Project scanner properties:
   - sonar.host.url=http://172.19.0.1:9002
   - sonar.login=******
-  - sonar.php.coverage.reportPaths=clover-report.xml
+  - sonar.php.coverage.reportPaths=tests/logs/clover-report.xml
   - sonar.php.tests.reportPath=tests-report.xml
   - sonar.projectBaseDir=/application
   - sonar.projectKey=BestPractice

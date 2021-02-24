@@ -1,1 +1,1 @@
-; (2webXªhr*tests/coverage/html/Service/dashboard.html
+; (2webXÌhr%tests/coverage/html/Entity/index.html

@@ -1,1 +1,1 @@
- (2webXhr)tests/coverage/html/Entity/dashboard.html
+ (2webXhr$tests/coverage/Entity/dashboard.html

@@ -1,1 +1,1 @@
-) (2webX¥hr;tests/coverage/html/EventSubscriber/MailSubscriber.php.html
+) (2webX‚hr6tests/coverage/EventSubscriber/MailSubscriber.php.html

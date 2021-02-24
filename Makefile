@@ -91,11 +91,11 @@ sonar-scanner: ##  Lance sonarQub
       -Dsonar.host.url=http://172.19.0.1:9002 \
       -Dsonar.login=e96e5f764b81836824ec3ab8a4bfd92801fa0649 \
       -Dsonar.php.tests.reportPath=tests-report.xml    \
-      -Dsonar.php.coverage.reportPaths=clover-report.xml   -X
+      -Dsonar.php.coverage.reportPaths=tests/logs/clover-report.xml   -X
 
 
 coverage:  ## Lance les tests unitaire
-	vendor/bin/simple-phpunit  --log-junit "junit.xml" --coverage-clover "clover.xml" --coverage-html "tests/coverage/html"
+	vendor/bin/simple-phpunit  --log-junit "tests/logs/junit.xml" --coverage-clover "tests/logs/clover.xml" --coverage-html "tests/coverage/html"
 
 
 

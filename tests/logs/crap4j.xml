@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2021-02-24 02:34:00</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>55</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>111</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(
+        GetNbrArticleService $nbrArticle,
+        EntityManagerInterface $manager
+    )</methodSignature>
+      <fullMethod>__construct(
+        GetNbrArticleService $nbrArticle,
+        EntityManagerInterface $manager
+    )</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>home</methodName>
+      <methodSignature>home(): Response</methodSignature>
+      <fullMethod>home(): Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(PaginatorService $paginator): Response</methodSignature>
+      <fullMethod>index(PaginatorService $paginator): Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>new</methodName>
+      <methodSignature>new(Request $request): Response</methodSignature>
+      <fullMethod>new(Request $request): Response</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Article $article): Response</methodSignature>
+      <fullMethod>show(Article $article): Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Request $request, Article $article): Response</methodSignature>
+      <fullMethod>edit(Request $request, Article $article): Response</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>deleteStudent</methodName>
+      <methodSignature>deleteStudent(Article $article): Response</methodSignature>
+      <fullMethod>deleteStudent(Article $article): Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>save</methodName>
+      <methodSignature>save(Article $objet): void</methodSignature>
+      <fullMethod>save(Article $objet): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>getObjectVars</methodName>
+      <methodSignature>getObjectVars(): array</methodSignature>
+      <fullMethod>getObjectVars(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\ArticleController</className>
+      <methodName>getKernelVersion</methodName>
+      <methodSignature>getKernelVersion(): string</methodSignature>
+      <fullMethod>getKernelVersion(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\DataFixtures</package>
+      <className>App\DataFixtures\AppFixtures</className>
+      <methodName>load</methodName>
+      <methodSignature>load(ObjectManager $manager): void</methodSignature>
+      <fullMethod>load(ObjectManager $manager): void</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>getName</methodName>
+      <methodSignature>getName(): ?string</methodSignature>
+      <fullMethod>getName(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>setName</methodName>
+      <methodSignature>setName(string $name): self</methodSignature>
+      <fullMethod>setName(string $name): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>getContent</methodName>
+      <methodSignature>getContent(): ?string</methodSignature>
+      <fullMethod>getContent(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>setContent</methodName>
+      <methodSignature>setContent(string $content): self</methodSignature>
+      <fullMethod>setContent(string $content): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>getAuthor</methodName>
+      <methodSignature>getAuthor(): ?string</methodSignature>
+      <fullMethod>getAuthor(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>setAuthor</methodName>
+      <methodSignature>setAuthor(string $author): self</methodSignature>
+      <fullMethod>setAuthor(string $author): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>getCategory</methodName>
+      <methodSignature>getCategory(): ?Category</methodSignature>
+      <fullMethod>getCategory(): ?Category</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Article</className>
+      <methodName>setCategory</methodName>
+      <methodSignature>setCategory(?Category $category): self</methodSignature>
+      <fullMethod>setCategory(?Category $category): self</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>getCreatedAt</methodName>
+      <methodSignature>getCreatedAt(): ?DateTime</methodSignature>
+      <fullMethod>getCreatedAt(): ?DateTime</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>setCreatedAt</methodName>
+      <methodSignature>setCreatedAt(DateTime $createdAt): self</methodSignature>
+      <fullMethod>setCreatedAt(DateTime $createdAt): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>getUpdatedAt</methodName>
+      <methodSignature>getUpdatedAt(): ?DateTime</methodSignature>
+      <fullMethod>getUpdatedAt(): ?DateTime</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>setUpdatedAt</methodName>
+      <methodSignature>setUpdatedAt(DateTime $updatedAt): self</methodSignature>
+      <fullMethod>setUpdatedAt(DateTime $updatedAt): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\BaseEntity</className>
+      <methodName>updateTimestamps</methodName>
+      <methodSignature>updateTimestamps(): void</methodSignature>
+      <fullMethod>updateTimestamps(): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>getName</methodName>
+      <methodSignature>getName(): ?string</methodSignature>
+      <fullMethod>getName(): ?string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>setName</methodName>
+      <methodSignature>setName(string $name): self</methodSignature>
+      <fullMethod>setName(string $name): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>getArticle</methodName>
+      <methodSignature>getArticle(): Collection</methodSignature>
+      <fullMethod>getArticle(): Collection</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>addArticle</methodName>
+      <methodSignature>addArticle(Article $article): self</methodSignature>
+      <fullMethod>addArticle(Article $article): self</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\Category</className>
+      <methodName>removeArticle</methodName>
+      <methodSignature>removeArticle(Article $article): self</methodSignature>
+      <fullMethod>removeArticle(Article $article): self</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>ResourceIdTrait</className>
+      <methodName>getId</methodName>
+      <methodSignature>getId(): ?int</methodSignature>
+      <fullMethod>getId(): ?int</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(MailerInterface $mailer)</methodSignature>
+      <fullMethod>__construct(MailerInterface $mailer)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>getSubscribedEvents</methodName>
+      <methodSignature>getSubscribedEvents(): array</methodSignature>
+      <fullMethod>getSubscribedEvents(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>prePersist</methodName>
+      <methodSignature>prePersist(LifecycleEventArgs $args): object</methodSignature>
+      <fullMethod>prePersist(LifecycleEventArgs $args): object</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>preUpdate</methodName>
+      <methodSignature>preUpdate(LifecycleEventArgs $args): void</methodSignature>
+      <fullMethod>preUpdate(LifecycleEventArgs $args): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>preRemove</methodName>
+      <methodSignature>preRemove(LifecycleEventArgs $args): object</methodSignature>
+      <fullMethod>preRemove(LifecycleEventArgs $args): object</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\EventSubscriber</package>
+      <className>App\EventSubscriber\MailSubscriber</className>
+      <methodName>sendEmail</methodName>
+      <methodSignature>sendEmail(): void</methodSignature>
+      <fullMethod>sendEmail(): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Form</package>
+      <className>App\Form\ArticleFormType</className>
+      <methodName>buildForm</methodName>
+      <methodSignature>buildForm(FormBuilderInterface $builder, array $options): void</methodSignature>
+      <fullMethod>buildForm(FormBuilderInterface $builder, array $options): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Form</package>
+      <className>App\Form\ArticleFormType</className>
+      <methodName>configureOptions</methodName>
+      <methodSignature>configureOptions(OptionsResolver $resolver): void</methodSignature>
+      <fullMethod>configureOptions(OptionsResolver $resolver): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Form</package>
+      <className>App\Form\CategoryFormType</className>
+      <methodName>buildForm</methodName>
+      <methodSignature>buildForm(FormBuilderInterface $builder, array $options):void</methodSignature>
+      <fullMethod>buildForm(FormBuilderInterface $builder, array $options):void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Form</package>
+      <className>App\Form\CategoryFormType</className>
+      <methodName>configureOptions</methodName>
+      <methodSignature>configureOptions(OptionsResolver $resolver):void</methodSignature>
+      <fullMethod>configureOptions(OptionsResolver $resolver):void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\Kernel</className>
+      <methodName>configureContainer</methodName>
+      <methodSignature>configureContainer(ContainerConfigurator $container): void</methodSignature>
+      <fullMethod>configureContainer(ContainerConfigurator $container): void</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App</package>
+      <className>App\Kernel</className>
+      <methodName>configureRoutes</methodName>
+      <methodSignature>configureRoutes(RoutingConfigurator $routes): void</methodSignature>
+      <fullMethod>configureRoutes(RoutingConfigurator $routes): void</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Repository</package>
+      <className>App\Repository\ArticleRepository</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(ManagerRegistry $registry)</methodSignature>
+      <fullMethod>__construct(ManagerRegistry $registry)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Repository</package>
+      <className>App\Repository\CategoryRepository</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(ManagerRegistry $registry)</methodSignature>
+      <fullMethod>__construct(ManagerRegistry $registry)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\ArticleService</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(ArticleRepository $repository)</methodSignature>
+      <fullMethod>__construct(ArticleRepository $repository)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\ArticleService</className>
+      <methodName>getAll</methodName>
+      <methodSignature>getAll(): array</methodSignature>
+      <fullMethod>getAll(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\ArticleService</className>
+      <methodName>getCount</methodName>
+      <methodSignature>getCount(): int</methodSignature>
+      <fullMethod>getCount(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\GetCurrentDateService</className>
+      <methodName>getCurrentDate</methodName>
+      <methodSignature>getCurrentDate(): string</methodSignature>
+      <fullMethod>getCurrentDate(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\GetCurrentDateService</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\GetNbrArticleService</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(ArticleRepository $repository)</methodSignature>
+      <fullMethod>__construct(ArticleRepository $repository)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\GetNbrArticleService</className>
+      <methodName>getAll</methodName>
+      <methodSignature>getAll(): int</methodSignature>
+      <fullMethod>getAll(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\PaginatorService</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(PaginatorInterface $paginator, RequestStack $requestStack, ArticleService $articleService)</methodSignature>
+      <fullMethod>__construct(PaginatorInterface $paginator, RequestStack $requestStack, ArticleService $articleService)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Service</package>
+      <className>App\Service\PaginatorService</className>
+      <methodName>pagination</methodName>
+      <methodSignature>pagination(): object</methodSignature>
+      <fullMethod>pagination(): object</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>

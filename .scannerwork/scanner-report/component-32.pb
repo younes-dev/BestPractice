@@ -1,1 +1,1 @@
-  (2cssXhr%tests/coverage/html/_css/octicons.css
+  (2cssXhr tests/coverage/_css/octicons.css

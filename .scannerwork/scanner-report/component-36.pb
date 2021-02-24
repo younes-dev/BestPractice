@@ -1,1 +1,1 @@
-$ (2jsX?hrtests/coverage/html/_js/file.js
+$ (2jsX?hrtests/coverage/_js/file.js
