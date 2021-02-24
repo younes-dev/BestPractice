@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-  <testsuite name="Project Test Suite" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.012333">
-    <testsuite name="App\Tests\ArticleTest" file="application/tests/ArticleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.012333">
-      <testcase name="testSomething" class="App\Tests\ArticleTest" classname="App.Tests.ArticleTest" file="application/tests/ArticleTest.php" line="9" assertions="1" time="0.012333"/>
-    </testsuite>
-  </testsuite>
-</testsuites>
