@@ -50,7 +50,7 @@ class MailSubscriber implements EventSubscriber
      */
     public function prePersist(LifecycleEventArgs $args): void
     {
-        $this->getInfo($args, self::$operations["insert"]);
+        $this->sendEmail($this->getInfo($args), self::$operations["insert"]);
     }
 
     /**
@@ -59,7 +59,7 @@ class MailSubscriber implements EventSubscriber
      */
     public function preUpdate(LifecycleEventArgs $args): void
     {
-        $this->getInfo($args, self::$operations["update"]);
+        $this->sendEmail($this->getInfo($args), self::$operations["update"]);
     }
 
     /**
@@ -68,22 +68,23 @@ class MailSubscriber implements EventSubscriber
      */
     public function preRemove(LifecycleEventArgs $args): void
     {
-        $this->getInfo($args, self::$operations["remove"]);
+        $this->sendEmail($this->getInfo($args), self::$operations["remove"]);
     }
 
     /**
      * @codeCoverageIgnore
      * @param array $info
+     * @param string $operations
      */
-    public function sendEmail(array $info): void
+    public function sendEmail(array $info, string $operations): void
     {
         $msg = null;
         if (!$info["id"]) {
-            $msg = sprintf('The Author : %s %s A New Article At :  %s', $info["author"], $info["operation"], $info["dateEvent"]);
+            $msg = sprintf('The Author : %s %s A New Article At :  %s', $info["author"], $operations, $info["dateEvent"]);
         }
 
         if ($info["id"]) {
-            $msg = sprintf('The Author %s %s The Article Id : %s At :  %s', $info["author"], $info["operation"], $info["id"], $info["dateEvent"]);
+            $msg = sprintf('The Author %s %s The Article Id : %s At :  %s', $info["author"], $operations, $info["id"], $info["dateEvent"]);
         }
         $email = (new Email())
             ->from('younes.oulkaid@gmail.com')
@@ -101,16 +102,16 @@ class MailSubscriber implements EventSubscriber
 
     /**
      * @param LifecycleEventArgs $args
-     * @param string $operations
+     * @return array
      * @codeCoverageIgnore
      */
-    private function getInfo(LifecycleEventArgs $args, string $operations): void
+    private function getInfo(LifecycleEventArgs $args): array
     {
         /**
          * @var Article $entity
          */
         $entity = $args->getEntity();
-        $info = [
+        return [
             'id' => $entity->getId(),
             'name' => $entity->getName(),
             'content' => $entity->getContent(),
@@ -118,7 +119,5 @@ class MailSubscriber implements EventSubscriber
             'category' => $entity->getCategory(),
             'dateEvent' => date_format(new DateTime(), "H:i:s d/m/Y"),
         ];
-        $info = array_merge($info, ["operation" => $operations]);
-        $this->sendEmail($info);
     }
 }

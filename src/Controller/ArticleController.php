@@ -52,7 +52,6 @@ class ArticleController extends AbstractController
     public function index(PaginatorService $paginator): Response
     {
         $articles = $paginator->pagination();
-        // dd($this->nbrArticle->getAll());
 
         return $this->render('article/list.html.twig', [
             'articles' => $articles,

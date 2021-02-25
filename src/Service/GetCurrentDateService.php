@@ -8,8 +8,8 @@ class GetCurrentDateService
 {
     public static function getCurrentDate(): string
     {
-        $time = new DateTime();
-        return date_format($time, ' l jS F Y');
+        $date = new DateTime();
+        return date_format($date, ' l jS F Y');
     }
 
     public function __toString(): string

@@ -10,12 +10,6 @@ use PHPUnit\Framework\TestCase;
 class ArticleTest extends TestCase
 {
 
-//    public function testConstruct(): void
-//    {
-//     $baseEntity = new BaseEntity();
-//     //$baseEntity->getCreatedAt();
-//    }
-
     public function testIsSame(): void
     {
         $category = new  Category();

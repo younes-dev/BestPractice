@@ -36,7 +36,7 @@ class PaginatorService
         return $this->paginator->paginate(
             array_reverse($this->articleService->getAll()),
             $this->requestStack->getCurrentRequest()->query->getInt('page', 1),
-            5
+            6
         );
     }
 }
