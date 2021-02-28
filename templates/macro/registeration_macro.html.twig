@@ -1,0 +1,23 @@
+{% macro formUserChildren(Formchildren,start=0,nbrLoops=3) %}
+
+    {% set labelMap=
+        { "username" : "Type your user name" ,
+            "fistName" : "Type your first name" ,
+            "lastName" : "Type your last name" ,
+            "email" : "Type your email" ,
+            "password" : "Type your passwor " ,
+            "retypePassword" : "Retype your password "
+        } %}
+
+    {% for child in Formchildren[start:nbrLoops] %}
+        <div class="form-group">
+            <div class="form-widget mt-4 py-2">
+                {# to display label Above every Field uncomment the next line#}
+                {#{{ form_label(child, null, {'label_attr': {'class': 'control-label required'}}) }}#}
+
+                {{ form_widget(child, { 'attr': {'class': 'form-control' ,'placeholder': labelMap[child.vars['name']] }}) }}
+            </div>
+            {{ form_errors(child) }}
+        </div>
+    {% endfor %}
+{% endmacro %}

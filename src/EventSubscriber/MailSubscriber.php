@@ -50,7 +50,9 @@ class MailSubscriber implements EventSubscriber
      */
     public function prePersist(LifecycleEventArgs $args): void
     {
-        $this->sendEmail($this->getInfo($args), self::$operations["insert"]);
+        if ($args->getEntity() instanceof Article) {
+            $this->sendEmail($this->getInfo($args), self::$operations["insert"]);
+        }
     }
 
     /**
@@ -59,7 +61,9 @@ class MailSubscriber implements EventSubscriber
      */
     public function preUpdate(LifecycleEventArgs $args): void
     {
-        $this->sendEmail($this->getInfo($args), self::$operations["update"]);
+        if ($args->getEntity() instanceof Article) {
+            $this->sendEmail($this->getInfo($args), self::$operations["update"]);
+        }
     }
 
     /**
@@ -68,7 +72,9 @@ class MailSubscriber implements EventSubscriber
      */
     public function preRemove(LifecycleEventArgs $args): void
     {
-        $this->sendEmail($this->getInfo($args), self::$operations["remove"]);
+        if ($args->getEntity() instanceof Article) {
+            $this->sendEmail($this->getInfo($args), self::$operations["remove"]);
+        }
     }
 
     /**

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2021-02-24 16:02:04</timestamp>
+  <timestamp>2021-02-26 10:32:56</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>56</methodCount>
+    <methodCount>76</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>113</totalCrap>
+    <totalCrap>178</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -125,6 +125,28 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\LoginController</className>
+      <methodName>loginAction</methodName>
+      <methodSignature>loginAction(AuthenticationUtils $authenticationUtils): Response</methodSignature>
+      <fullMethod>loginAction(AuthenticationUtils $authenticationUtils): Response</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Controller</package>
+      <className>App\Controller\RegistrationController</className>
+      <methodName>addUser</methodName>
+      <methodSignature>addUser(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response</methodSignature>
+      <fullMethod>addUser(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -370,6 +392,171 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getFistName</methodName>
+      <methodSignature>getFistName(): string</methodSignature>
+      <fullMethod>getFistName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setFistName</methodName>
+      <methodSignature>setFistName(string $fistName): void</methodSignature>
+      <fullMethod>setFistName(string $fistName): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getLastName</methodName>
+      <methodSignature>getLastName(): string</methodSignature>
+      <fullMethod>getLastName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setLastName</methodName>
+      <methodSignature>setLastName(string $lastName): void</methodSignature>
+      <fullMethod>setLastName(string $lastName): void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getUsername</methodName>
+      <methodSignature>getUsername(): ?string</methodSignature>
+      <fullMethod>getUsername(): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setUsername</methodName>
+      <methodSignature>setUsername(string $username): User</methodSignature>
+      <fullMethod>setUsername(string $username): User</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getEmail</methodName>
+      <methodSignature>getEmail(): ?string</methodSignature>
+      <fullMethod>getEmail(): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setEmail</methodName>
+      <methodSignature>setEmail(string $email): self</methodSignature>
+      <fullMethod>setEmail(string $email): self</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getPassword</methodName>
+      <methodSignature>getPassword(): ?string</methodSignature>
+      <fullMethod>getPassword(): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setPassword</methodName>
+      <methodSignature>setPassword(string $password): User</methodSignature>
+      <fullMethod>setPassword(string $password): User</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getRoles</methodName>
+      <methodSignature>getRoles(): array</methodSignature>
+      <fullMethod>getRoles(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>setRoles</methodName>
+      <methodSignature>setRoles(array $roles): User</methodSignature>
+      <fullMethod>setRoles(array $roles): User</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>getSalt</methodName>
+      <methodSignature>getSalt()</methodSignature>
+      <fullMethod>getSalt()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>eraseCredentials</methodName>
+      <methodSignature>eraseCredentials(): int</methodSignature>
+      <fullMethod>eraseCredentials(): int</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Entity</package>
+      <className>App\Entity\User</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>__construct</methodName>
@@ -397,8 +584,8 @@
       <methodName>prePersist</methodName>
       <methodSignature>prePersist(LifecycleEventArgs $args): void</methodSignature>
       <fullMethod>prePersist(LifecycleEventArgs $args): void</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <crap>2</crap>
+      <complexity>2</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -408,8 +595,8 @@
       <methodName>preUpdate</methodName>
       <methodSignature>preUpdate(LifecycleEventArgs $args): void</methodSignature>
       <fullMethod>preUpdate(LifecycleEventArgs $args): void</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <crap>2</crap>
+      <complexity>2</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -419,8 +606,8 @@
       <methodName>preRemove</methodName>
       <methodSignature>preRemove(LifecycleEventArgs $args): void</methodSignature>
       <fullMethod>preRemove(LifecycleEventArgs $args): void</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <crap>2</crap>
+      <complexity>2</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -428,8 +615,8 @@
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>sendEmail</methodName>
-      <methodSignature>sendEmail(array $info): void</methodSignature>
-      <fullMethod>sendEmail(array $info): void</fullMethod>
+      <methodSignature>sendEmail(array $info, string $operations): void</methodSignature>
+      <fullMethod>sendEmail(array $info, string $operations): void</fullMethod>
       <crap>4</crap>
       <complexity>4</complexity>
       <coverage>100</coverage>
@@ -439,8 +626,8 @@
       <package>App\EventSubscriber</package>
       <className>App\EventSubscriber\MailSubscriber</className>
       <methodName>getInfo</methodName>
-      <methodSignature>getInfo(LifecycleEventArgs $args, string $operations): void</methodSignature>
-      <fullMethod>getInfo(LifecycleEventArgs $args, string $operations): void</fullMethod>
+      <methodSignature>getInfo(LifecycleEventArgs $args): array</methodSignature>
+      <fullMethod>getInfo(LifecycleEventArgs $args): array</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -491,6 +678,28 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
+      <package>App\Form</package>
+      <className>App\Form\RegistrationType</className>
+      <methodName>buildForm</methodName>
+      <methodSignature>buildForm(FormBuilderInterface $builder, array $options):void</methodSignature>
+      <fullMethod>buildForm(FormBuilderInterface $builder, array $options):void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Form</package>
+      <className>App\Form\RegistrationType</className>
+      <methodName>configureOptions</methodName>
+      <methodSignature>configureOptions(OptionsResolver $resolver):void</methodSignature>
+      <fullMethod>configureOptions(OptionsResolver $resolver):void</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
       <package>App</package>
       <className>App\Kernel</className>
       <methodName>configureContainer</methodName>
@@ -526,6 +735,17 @@
     <method>
       <package>App\Repository</package>
       <className>App\Repository\CategoryRepository</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(ManagerRegistry $registry)</methodSignature>
+      <fullMethod>__construct(ManagerRegistry $registry)</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>App\Repository</package>
+      <className>App\Repository\UserRepository</className>
       <methodName>__construct</methodName>
       <methodSignature>__construct(ManagerRegistry $registry)</methodSignature>
       <fullMethod>__construct(ManagerRegistry $registry)</fullMethod>

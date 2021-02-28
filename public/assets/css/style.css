@@ -16,6 +16,7 @@
     bottom: 0;
     left: 0;
     background: transparent;
+    margin-bottom: 20px;
 }
 
 .fixedBtn {
@@ -27,4 +28,90 @@
 
 .row {
     margin-bottom: 100px !important;
+}
+
+.dot {
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    border: solid 1px;
+    box-shadow: 3px 3px red, -1em 0 .9em olive;
+}
+
+#center {
+    margin-left: 100px;
+    /*margin-right: 00px;*/
+    margin-top: 50%;
+    margin-bottom: 20%;
+}
+
+/*.shadow {*/
+/*    color: white!important;*/
+/*    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue!important;*/
+/*}*/
+
+.note {
+    text-align: center;
+    height: 80px;
+    background: #005C97; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #005C97); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: -webkit-linear-gradient(left, #14304c, #557dcb);*/
+    /*background: linear-gradient(right, #557dcb, #14304c); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+    /*background: -webkit-linear-gradient(to bottom, #E5E5BE, #003973);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: #003973;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to bottom, #E5E5BE, #003973);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to bottom, #E5E5BE, #003973); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue !important;
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.form-content {
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+
+.form-control {
+    border-radius: 1.5rem;
+}
+
+.btnSubmit {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    /*background: #0062cc;*/
+    color: #fff;
+}
+
+.note2 {
+    text-align: center;
+    background: -webkit-linear-gradient(left, #2c3e50, #0072ff) !important;
+}
+
+#hover:hover {
+    background: -webkit-linear-gradient(left, #0072ff, #2c3e50) !important;
+}
+
+.vr {
+    border-left: 3px solid #2c3e50;
+    height: 230px;
+}
+
+.mb-0 {
+    margin-top: 80px;
+    margin-bottom: 10px !important;
+}
+
+.pd {
+    padding: 2px 100px 20px;
 }

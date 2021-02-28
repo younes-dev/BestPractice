@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Not found 404 error page{% endblock %}
+{% block body %}
+    <link rel="stylesheet" href="{{ asset('assets/css/error.css') }}">
+    <div class="notfound-page">
+        <div class="wrapper">
+            <h1>500 !</h1>
+            <h5>Sorry,Internal Server Error</h5>
+            <p style="font-size: medium">Common error, HTTP 500 is on the website server.</p>
+            <div class="buttons">
+                <a href="#"><i class="fas fa-home"></i> Go to Home</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
+            <div class="search-box">
+                <input type="text" name="search" placeholder="Search" class="rounded-pill">
+                <button type="search" class="reduce"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+{% endblock %}

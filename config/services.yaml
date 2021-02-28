@@ -32,24 +32,40 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-
-    app.getarticleservice:
+    ###############################
+    ######    Service       #######
+    ###############################
+    app.get_article_service:
         alias: App\Service\ArticleService
         public: true
 
-    app.getnbrarticleservice:
+    app.get_nbr_article_service:
         alias: App\Service\GetNbrArticleService
         public: true
 
-    app.getcurrentdateservice:
+    app.get_current_date_service:
         alias: App\Service\GetCurrentDateService
         public: true
 
-    app.paginatorservice:
+    app.paginator_service:
         alias: App\Service\PaginatorService
         public: true
 
-    app.mailsubscriber:
+    app.save_data_service:
+        alias: App\Service\SaveDataService
+        public: true
+
+    #############################################
+    ######   Doctrine Event Subscribers   #######
+    #############################################
+
+    app.mail_subscriber:
         class: App\EventSubscriber\MailSubscriber
         tags:
-            - { name: 'doctrine.event_subscriber' }
+            - { name: doctrine.event_subscriber }
+
+    app.encode_password_subscriber:
+        class: App\EventSubscriber\EncodePasswordSubscriber
+        autowire: true
+        tags:
+            - { name: doctrine.event_subscriber }

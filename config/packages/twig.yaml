@@ -4,4 +4,4 @@ twig:
 
     globals:
         # the value is the service's id
-        DateNow: '@app.getcurrentdateservice'
+        DateNow: '@app.get_current_date_service'

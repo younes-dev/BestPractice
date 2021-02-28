@@ -1,22 +1,39 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#" ><span style="font-size: x-large">🎶</span> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ path('home_article') }}">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{path('list_article') }}">List des Article</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('add_article') }}">Ajouter des Articles</a>
-            </li>
-        </ul>
+
+
+        <div class="container">
+            <a class="navbar-brand" href="#" ><span style="font-size: x-large">🎶</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('app_index') }}">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('list_article') }}">List des Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('add_article') }}">Ajouter des Articles</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav  float-right">
+                <li class="float-right">
+                    {% if app.user %}
+                        {%  set style="nav-link badge-warning p-2 rounded-pill float-right" %}
+                        <a class="{{ style }}" href="{{ path('app_logout') }}"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                    {% else %}
+                        {%  set style="nav-link badge-info p-2 rounded-pill float-right" %}
+                        <a class="{{ style }}" href="{{ path('app_login') }}"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+
     </div>
 </nav>

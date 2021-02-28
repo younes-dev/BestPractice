@@ -6,45 +6,46 @@ use App\Entity\Article;
 use App\Form\ArticleFormType;
 use App\Service\GetNbrArticleService;
 use App\Service\PaginatorService;
-use Doctrine\ORM\EntityManagerInterface;
+use App\Service\SaveDataService;
+use Doctrine\ORM\OptimisticLockException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @Route("/article")
+ * @package App\Controller
+ */
 class ArticleController extends AbstractController
 {
+    /**
+     * @var GetNbrArticleService
+     */
     private GetNbrArticleService $nbrArticle;
 
-    private EntityManagerInterface $manager;
+    /**
+     * @var SaveDataService
+     */
+    private SaveDataService $saveData;
 
     /**
      * @codeCoverageIgnore
      * @param GetNbrArticleService $nbrArticle
-     * @param EntityManagerInterface $manager
+     * @param SaveDataService $saveData
      */
     public function __construct(
         GetNbrArticleService $nbrArticle,
-        EntityManagerInterface $manager
+        SaveDataService $saveData
+
     ) {
         $this->nbrArticle = $nbrArticle;
-        $this->manager = $manager;
+        $this->saveData = $saveData;
     }
 
-    /**
-     * @Route("/", name="home_article")
-     *
-     * @codeCoverageIgnore
-     *
-     */
-    public function home(): Response
-    {
-        return $this->render('article/home.html.twig', [
-        ]);
-    }
 
     /**
-     * @Route("/article", name="list_article")
+     * @Route("", name="list_article")
      * @param PaginatorService $paginator
      * @return Response
      * @codeCoverageIgnore
@@ -60,10 +61,11 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/article/add", name="add_article" , methods={"GET","POST"})
+     * @Route("/add", name="add_article" , methods={"GET","POST"})
      * @param Request $request
      * @return Response
      * @codeCoverageIgnore
+     * @throws OptimisticLockException
      */
     public function new(Request $request): Response
     {
@@ -72,8 +74,7 @@ class ArticleController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->save($article);
-
+            $this->saveData->save($article);
             return $this->redirectToRoute('list_article');
         }
 
@@ -84,7 +85,7 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/article/{id}", name="show_article" , requirements={"id"="\d+"})
+     * @Route("/{id}", name="show_article" , requirements={"id"="\d+"})
      * @codeCoverageIgnore
      * @param Article $article
      * @return Response
@@ -99,7 +100,7 @@ class ArticleController extends AbstractController
     }
 
     //    /**
-//     * @Route("/article/{id}", name="show_article" , requirements={"id"="\d+"})
+//     * @Route("/{id}", name="show_article" , requirements={"id"="\d+"})
 //     *
 //     * @param Article $article
 //     * @return array
@@ -113,11 +114,12 @@ class ArticleController extends AbstractController
 //    }
 
     /**
-     * @Route("/article/{id}/edit", name="edit_article", methods={"GET","POST"})
+     * @Route("/{id}/edit", name="edit_article", methods={"GET","POST"})
      * @param Request $request
      * @param Article $article
      * @return Response
      * @codeCoverageIgnore
+     * @throws OptimisticLockException
      */
     public function edit(Request $request, Article $article): Response
     {
@@ -125,7 +127,7 @@ class ArticleController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+            $this->saveData->save($article);
 
             return $this->redirectToRoute('show_article', ['id' => $article->getId()]);
         }
@@ -137,23 +139,16 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/article/delete/{id}", name="article_delete", methods={"GET","DELETE"} , requirements={"id"="\d+"})
+     * @Route("/delete/{id}", name="article_delete", methods={"GET","DELETE"} , requirements={"id"="\d+"})
      * @param Article $article
      * @return Response
      * @codeCoverageIgnore
+     * @throws OptimisticLockException
      */
     public function deleteStudent(Article $article): Response
     {
-        $this->manager->remove($article);
-        $this->manager->flush();
-
+        $this->saveData->remove($article);
         return $this->redirectToRoute('list_article');
-    }
-
-    public function save(Article $objet): void
-    {
-        $this->manager->persist($objet);
-        $this->manager->flush();
     }
 
     /**

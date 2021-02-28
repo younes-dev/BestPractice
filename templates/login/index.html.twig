@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{#{% use "partials/navbar.html.twig" %}#}
+
+{% import "macro/login_macro.html.twig" as macro %}
+
+
+{% block body %}
+    <link href="{{ asset('assets/css/style.css') }}" type="text/css" rel="stylesheet"/>
+
+    {######################################################}
+    {###############        Best Methode      #############}
+    {######################################################}
+    <div class="container mt-lg-5">
+        <div class="row dot">
+            <div class="col-md-10 mt-lg-n5">
+                <form action="{{ path('app_login') }}" method="post" id="center">
+                    {{ macro.label("username","Username :") }}
+                    {{ macro.input("text","_username","form-control","username",last_username) }}
+                    {{ macro.label("password","Password :") }}
+                    {{ macro.input("password","_password","form-control","password",null) }}
+                    <input type="hidden" name="_target_path" value="/"/>
+                    <button type="submit" class="btn btn-primary w-100 rounded-pill mt-3">login</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    {######################################################}
+    {###############        Bad Methode       #############}
+    {######################################################}
+
+{#    <div class="container mt-lg-5">#}
+{#        <div class="row dot">#}
+{#            <div class="col-md-8">#}
+{#                <form action="{{ path('app_login') }}" method="post" id="center">#}
+{#                    <div class="form-group">#}
+
+{#                        <label for="username">Username:</label>#}
+{#                        <input type="text" name="_username" class="form-control" id="username"#}
+{#                               value="{{ last_username }}"/>#}
+{#                    </div>#}
+{#                    <div class="form-group">#}
+{#                        <label for="password">Password:</label>#}
+{#                        <input type="password" name="_password" class="form-control" id="password"/>#}
+{#                    </div>#}
+
+{#                    <input type="hidden" name="_target_path" value="/"/>#}
+{#                    <button type="submit" class="btn btn-primary">login</button>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+{% endblock %}

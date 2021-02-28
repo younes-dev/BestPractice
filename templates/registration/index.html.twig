@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %}
+{% import "macro/registeration_macro.html.twig" as macro %}
+{% block title %}Registration!{% endblock %}
+{% block body %}
+
+ <link href="{{ asset('assets/css/style.css') }}" type="text/css" rel="stylesheet" />
+
+    {######################################################}
+    {###############        Best Methode      #############}
+    {######################################################}
+
+    {{ form_start(formUser) }}
+    <div class="container register-form mt-lg-1">
+        <div class="row mb-0">
+            <div class="col-md-12">
+                {{ form_errors(formUser) }}
+            </div>
+        </div>
+        <div class="form">
+            <div class="note">
+                <p class="shadow">This is a simpleRegister Form made using Boostrap.</p>
+            </div>
+            <div class="form-content pd">
+                <div class="row mb-0">
+                    <div class="col-md-5">
+                        {{ macro.formUserChildren(formUser.children[0:3]) }}
+                    </div>
+                    <hr class="vr shadow-lg mb-5 rounded">
+
+                    <div class="col-md-5">
+                        {{ macro.formUserChildren(formUser.children[3:3]) }}
+                    </div>
+                </div>
+                <div class="form-group note2 rounded-circle" id="hover">
+                    <button type="submit" class="btnSubmit w-100 align-items-lg-center note2" id="hover">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ form_end(formUser) }}
+
+
+    {######################################################}
+    {###############        Good Methode      #############}
+    {######################################################}
+
+{#    {{ form_start(formUser) }}#}
+{#    <div class="container register-form mt-lg-1">#}
+{#        <div class="row mb-0">#}
+{#            <div class="col-md-12">#}
+{#                {{ form_errors(formUser) }}#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="form">#}
+{#            <div class="note">#}
+{#                <p class="shadow">This is a simpleRegister Form made using Boostrap.</p>#}
+{#            </div>#}
+{#            <div class="form-content pd">#}
+{#                <div class="row mb-0">#}
+{#                    <div class="col-md-5">#}
+{#                         {% for child in formUser.children[0:3] %}#}
+{#                         <div class="form-group">#}
+{#                         {{ form_label(child, null, {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                         <div class="form-widget">#}
+{#                         {{ form_widget(child, { 'attr': {'class': 'form-control' }}) }}#}
+{#                         </div>#}
+{#                         {{ form_errors(child) }}#}
+{#                         </div>#}
+{#                         {% endfor %}#}
+{#                    </div>#}
+
+{#                    <hr class="vr shadow-lg mb-5 rounded">#}
+
+{#                    <div class="col-md-5">#}
+{#                         {% for child in formUser.children[3:3] %}#}
+{#                         <div class="form-group">#}
+{#                         {{ form_label(child, null, {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                         <div class="form-widget">#}
+{#                         {{ form_widget(child, { 'attr': {'class': 'form-control' }}) }}#}
+{#                         </div>#}
+{#                         {{ form_errors(child) }}#}
+{#                         </div>#}
+{#                         {% endfor %}#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="form-group note2 rounded-circle" id="hover">#}
+{#                    <button type="submit" class="btnSubmit w-100 align-items-lg-center note2" id="hover">Submit</button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    {{ form_end(formUser) }}#}
+
+    {######################################################}
+    {###############        Bad Methode       #############}
+    {######################################################}
+
+{#    {{ form_start(formUser) }}#}
+{#    <div class="container register-form mt-lg-1">#}
+{#        <div class="row mb-0">#}
+{#            <div class="col-md-12">#}
+{#                {{ form_errors(formUser) }}#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="form">#}
+{#            <div class="note">#}
+{#                <p class="shadow">This is a simpleRegister Form made using Boostrap.</p>#}
+{#            </div>#}
+{#            <div class="form-content pd">#}
+{#                <div class="row mb-0">#}
+{#                    <div class="col-md-5">#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.fistName, 'first name:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.fistName, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.fistName) }}#}
+{#                        </div>#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.lastName, 'last name:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.lastName, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.lastName) }}#}
+{#                        </div>#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.email, 'email:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.email, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.email) }}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <hr class="vr shadow-lg mb-5 rounded">#}
+{#                    <div class="col-md-5">#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.username, 'username:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.username, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.username) }}#}
+{#                        </div>#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.password, 'password:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.password, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.password) }}#}
+{#                        </div>#}
+{#                        <div class="form-group">#}
+{#                            {{ form_label(formUser.retypePassword, 'retypePassword:', {'label_attr': {'class': 'control-label required'}}) }}#}
+{#                            <div class="form-widget">#}
+{#                                {{ form_widget(formUser.retypePassword, { 'attr': {'class': 'form-control' }}) }}#}
+{#                            </div>#}
+{#                            {{ form_errors(formUser.retypePassword) }}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="form-group note2 rounded-circle" id="hover">#}
+{#                    <button type="submit" class="btnSubmit w-100 align-items-lg-center note2" id="hover">Submit</button>#}
+{#                </div>#}
+{#            </div>#}
+
+{#        </div>#}
+{#    </div>#}
+{#    {{ form_end(formUser) }}#}
+{#    #}
+
+{% endblock %}
+
