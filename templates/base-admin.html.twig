@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome To Dashboard{% endblock %}</title>
+        <link href="{{ asset('dashboard/css/style.css') }}" type="text/css" rel="stylesheet" />
+        {% include("partials/_cdn.html.twig") %}
+
+
+        {% block stylesheets %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    {% include("dashboard/components/_navigation.html.twig") %}
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            {% include("dashboard/components/_breadcrumbs.html.twig") %}
+
+            <!-- Icon Cards-->
+            {% include("dashboard/components/_icon-cards.html.twig") %}
+
+            <!-- Area Chart Example-->
+            {% include("dashboard/components/_chart.html.twig") %}
+
+            {% block body %}
+
+            {% endblock %}
+
+
+        </div>
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+
+        <!-- sticky-footer -->
+        {% include("dashboard/components/_sticky-footer.html.twig") %}
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!-- Logout Modal-->
+        {% include("dashboard/components/_logout-modal.html.twig") %}
+
+    </div>
+        <script src="{{ asset('dashboard/js/script.js') }}"></script>
+
+    </body>
+</html>

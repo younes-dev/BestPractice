@@ -1,0 +1,103 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block body %}
+
+    <div class="container justify-content-center mt-5 bg-light">
+
+        <div class="row p-3">
+            <div class="col-md-6">
+                Title
+            </div>
+            <div class="col-md-6">
+                {{ article.name }}
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-md-6">
+                Crée le
+            </div>
+            <div class="col-md-6">
+                <label class="badge-dark pl-2 pr-2 rounded"> {{ article.createdAt |date('d/m/y') }}</label> &nbsp&nbsp à
+                &nbsp&nbsp
+                <label class="badge-dark pl-2 pr-2 rounded">{{ article.createdAt |date('H:i') }}</label>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-md-6">
+                Categorie
+            </div>
+            <div class="col-md-6">
+                {{ article.category.name }}
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-md-6">
+                Auteur
+            </div>
+            <div class="col-md-6">
+                {{ article.author }}
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-md-6">
+                Description
+            </div>
+            <div class="col-md-6">
+                {{ article.content }}
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-md-6">
+                Image
+            </div>
+            <div class="col-md-6">
+                {% set picture ="http://placehold.it/750x300" %}
+                <img class="card-img-top"
+                     src="{{ article.picture ? asset('/uploads/images/'~ article.picture) : picture }}"
+                     style="height: 260px;width: 500px;" alt="img Card image cap">
+
+            </div>
+        </div>
+
+        <div class="row p-3 mt-lg-n5">
+            <div class="col-md-12">
+                <a href="{{ path('app_article_edit', { 'id':article.id }) }}" class="btn btn-primary btn-sm">&nbsp;&nbsp;Edit&nbsp;&nbsp;</a>
+
+                <a href="{{ path('app_article_delete', { 'id':article.id }) }}" class="btn btn-danger btn-sm"
+                   data-toggle="modal" data-target="#exampleModal">Delete</a>
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Delete" below if you are ready to delete this element.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="{{ path('app_article_delete', { 'id':article.id }) }}">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        form {
+            display: inline-block;
+        }
+    </style>
+
+
+
+{% endblock %}
+
+

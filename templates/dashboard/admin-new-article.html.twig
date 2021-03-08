@@ -1,0 +1,37 @@
+{% extends 'base-admin.html.twig' %}
+
+{% block body %}
+
+    <div class="container mb-5">
+
+
+        <h1 class="text-center m-5">Creation d'un article</h1>
+
+        {{ form_start(form) }}
+
+        {{ form_errors(form.name) }}
+        {{ form_row(form.name,{'attr': {'Placeholder': 'titre de l\'article'}}) }}
+
+        {{ form_errors(form.author) }}
+        {{ form_row(form.author,{'attr': {'Placeholder': 'auteur de l\'article'}}) }}
+
+        {{ form_row(form.category) }}
+
+        {{ form_errors(form.content) }}
+        {{ form_row(form.content,{'attr': {'Placeholder': 'image de l\'article'}}) }}
+
+        {{ form_errors(form.picture) }}
+        {{ form_row(form.picture,{'attr': {'Placeholder': 'image de l\'article'}}) }}
+
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success align-items-center w-100"> Ajouter</button>
+        </div>
+
+        {{ form_end(form) }}
+
+    </div>
+
+{% endblock %}
+
+
